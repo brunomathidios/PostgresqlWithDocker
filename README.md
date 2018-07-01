@@ -15,5 +15,11 @@ To access the database, run the following command in another terminal window:
 
 * *docker exec -it delivery_postgres bash*
 
+Then
+
+* *psql -U delivery -W*
+
+The password can be found at: *src/main/resources/docker/postgres/docker-compose.yml*
+
 
 //TODO: add JOOQ in pom.xml and configure this persistence framework
