@@ -13,7 +13,7 @@ After cloning it, go to folder *..src/main/resources/docker/postgres* and run th
 
 To access the database, run the following command in another terminal window:
 
-* *docker exec -it ordernow_mysql bash*
+* *docker exec -it delivery_postgres bash*
 
 
 //TODO: add JOOQ in pom.xml and configure this persistence framework
