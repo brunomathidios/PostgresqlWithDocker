@@ -9,23 +9,21 @@
   </jdbc>
 
   <generator>
-  	<name>org.jooq.util.JavaGenerator</name>
+  	<name>org.jooq.codegen.JavaGenerator</name>
   	<generate>
         <javaTimeTypes>true</javaTimeTypes>
     </generate>
     
     <database>
-      <name>org.jooq.util.postgres.PostgresDatabase</name>
+      <name>org.jooq.meta.postgres.PostgresDatabase</name>
       <inputSchema>public</inputSchema>
       <includes>.*</includes>
       <excludes></excludes>
     </database>
 
     <target>
-        <packageName>br.com.sp.posgresdocker.model.jooq</packageName>
-
-        <!-- The destination directory of your generated classes. Using Maven directory layout here -->
-        <directory>../src/main/java</directory>
+        <packageName>com.br.sp.posgresdocker.model.jooq</packageName>
+        <directory>../../java</directory>
     </target>
   </generator>
 </configuration>
